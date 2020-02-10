@@ -149,7 +149,7 @@
                             <div class="br"></div>
                         </aside>
                     </#if>
-                    <div class="menu"></div>
+                    <div class="ctlyt-menu"></div>
                 </div>
             </div>
         </div>
@@ -174,7 +174,7 @@
                 var contentH=$(this).html();//获取内容
                 var markid="mark-"+tagName+"-"+index.toString();
                 $(this).attr("id",markid);//为当前h标签设置id
-                $(".menu").append("<a href='#"+markid+"'>"+contentH+"</a>");//在目标DIV中添加内容   
+                $(".ctlyt-menu").append("<a href='#"+markid+"'>"+contentH+"</a>");//在目标DIV中添加内容   
             }  
         });
 
@@ -182,13 +182,13 @@
         
     var $share_top = $(".ctlyt-share").offset().top;
     $(".ctlyt-share").css({'position': 'fixed',"top":"0px"});
-    var $menu_top = $(".menu").offset().top;
+    var $menu_top = $(".ctlyt-menu").offset().top;
     $(window).scroll(function() {
         var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         if($menu_top>scrollTop){
-            $(".menu").removeAttr("style"); 
+            $(".ctlyt-menu").removeAttr("style"); 
         }else{
-            $(".menu").css({'position': 'fixed','top':'30px'});
+            $(".ctlyt-menu").css({'position': 'fixed','top':'30px'});
         }
         if($share_top>scrollTop){
             $(".ctlyt-share").css({'position': 'absolute',"top":$share_top+"px"});

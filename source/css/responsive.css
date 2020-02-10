@@ -370,4 +370,11 @@
 	.blog_text {
 		padding: 60px 20px;
 	}
+	.ctlyt-menu,.ctlyt-share{
+		display: none;
+	}
+	.actGotop{
+		right: 5px;
+		bottom: 5px;
+	}
 }
