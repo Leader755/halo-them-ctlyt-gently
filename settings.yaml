@@ -1,0 +1,189 @@
+sidebar:
+  label: 个性化
+  items:
+    head_search:
+      name: head_search
+      label: 顶部搜索框
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    sidebar_profile:
+      name: sidebar_profile
+      label: 侧边栏个人资料
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    sidebar_categories:
+      name: sidebar_categories
+      label: 侧边栏分类
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    sidebar_tagcloud:
+      name: sidebar_tagcloud
+      label: 侧边栏标签
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    tree_menu_enable:
+      name: profile_enable
+      label: 菜单样式
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 级联菜单
+        - value: false
+          label: 列表
+    sidebar_recentpost:
+      name: sidebar_recentpost
+      label: 侧边栏最近文章
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    sidebar_tags:
+      name: sidebar_tags
+      label: 侧边栏
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    banner_bg:
+      name: banner_bg
+      label: 主页banner图
+      type: text
+      placeholder: '图片地址'
+      default: null
+    other_banner_bg:
+      name: other_banner_bg
+      label: 其他页banner图
+      type: text
+      placeholder: '图片地址'
+      default: null
+    other_bg:
+      name: other_bg
+      label: 其他页背景图
+      type: text
+      placeholder: '图片地址'
+      default: null
+post:
+  label: 文章设置
+  items:
+    share_type:
+      name: share_type
+      label: 文章分享组件
+      type: select
+      default: 'sharejs'
+      options:
+        - value: ''
+          label: '无'
+        - value: addtoany
+          label: addtoany
+        - value: sharejs
+          label: sharejs
+    donate_alipay:
+      name: donate_alipay
+      label: 支付宝捐赠二维码
+      type: attachment
+      placeholder: '二维码地址'
+    donate_wechat:
+      name: donate_wechat
+      label: 微信捐赠二维码
+      type: attachment
+      placeholder: '二维码地址'
+    code_style:
+      name: code_style
+      label: 文章代码高亮主题
+      type: select
+      default: Default
+      options:
+        - value: monokai
+          label: Default
+        - value: tomorrow
+          label: Tomorrow
+        - value: zenburn
+          label: Zenburn
+        - value: atom-one-light
+          label: Atom-one-light
+        - value: mono-blue
+          label: Mono-blue
+        - value: vs
+          label: Vs
+        - value: github
+          label: Github   
+social:
+  label: 社交设置
+  items:
+    gently_github:
+      name: gently_github
+      label: Github
+      type: text
+      placeholder: 'Github 用户名'
+    gently_qq:
+      name: gently_qq
+      label: QQ
+      type: text
+      placeholder: 'QQ 号'
+    gently_weibo:
+      name: gently_weibo
+      label: 微博
+      type: text
+      placeholder: '微博用户名'
+    gently_twitter:
+      name: gently_twitter
+      label: Twitter
+      type: text
+      placeholder: 'Twitter 用户名'
+    gently_facebook:
+      name: gently_facebook
+      label: Facebook
+      type: text
+      placeholder: 'Facebook 用户名'
+    gently_email:
+      name: gently_email
+      label: Email
+      type: text
+      placeholder: '邮箱地址'
+    gently_telegram:
+      name: gently_telegram
+      label: Telegram
+      type: text
+      placeholder: 'Telegram 用户名'
+custom_links:
+  label: 自定义链接
+  items:
+    links_footer:
+      name: links_footer
+      label: 底部链接
+      type: textarea
+      default: ''
