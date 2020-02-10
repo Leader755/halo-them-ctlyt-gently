@@ -32,7 +32,7 @@
                                             <a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i>${category.postCount!}</a>
                                         </div>
                                         <a href="${context!}/categories/${category.slugName!}"><h4>${category.name!}</h4></a>
-                                        <p>${category.description}</p>
+                                        <p class="ctlyt-p-text">${category.description}</p>
                                         <a class="blog_btn" href="${context!}/categories/${category.slugName!}">看分类</a>
                                     </div>
                                 </div>

@@ -54,6 +54,9 @@
             width:60px;
             background-color: #fff;
         }
+        .ctlyt-p-text{
+            word-wrap: break-word;
+        }
         .ctlyt-search-blog{
             height:100px;
         }

@@ -41,7 +41,7 @@
                                 <div class="blog_text">
                                     <div class="blog_text_inner">
                                         <a href="${link.url!}" target="_blank"><h5 style="color: #000">${link.name!}</h5></a>
-                                        <p>${link.description!}</p>
+                                        <p class="ctlyt-p-text">${link.description!}</p>
                                         <a class="blog_btn" href="${link.url!}" target="_blank">去看看</a>
                                     </div>
                                 </div>

@@ -31,7 +31,7 @@
                                     <span><i class="fa fa-eye" aria-hidden="true"></i> ${post.visits!0}</span>
                                 </div>
                                 <a href="${context!}/archives/${post.url!}"><h4>${post.title!}</h4></a>
-                                <p>${post.summary!}</p>
+                                <p class="ctlyt-p-text">${post.summary!}</p>
                                 <a class="blog_btn" href="${context!}/archives/${post.url!}">阅读更多</a>
                             </div>
                         </div>
