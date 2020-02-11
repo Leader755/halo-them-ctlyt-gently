@@ -166,6 +166,7 @@
 <script src="${static!}/source/js/jquery.share.min.js"></script>
 <script>
     hljs.initHighlightingOnLoad();
+
     $('#share').share({sites: ['qzone', 'qq', 'weibo','wechat']});
     
     $(document).ready(function(e) {
@@ -180,9 +181,7 @@
         });
 
     });
-        
-    var $share_top = $(".ctlyt-share").offset().top;
-    $(".ctlyt-share").css({'position': 'fixed',"top":"0px"});
+
     var $menu_top = $(".ctlyt-menu").offset().top;
     var $width =  $(window).width();
     $(window).resize(function () {  
@@ -191,7 +190,7 @@
     $(window).scroll(function() {
         var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         if($menu_top>scrollTop){
-        $(".ctlyt-menu").removeAttr("style"); 
+            $(".ctlyt-menu").removeAttr("style"); 
         }else{
             $(".ctlyt-menu").css({'position': 'fixed','top':'75px'});
         }
