@@ -185,15 +185,21 @@
     var $menu_top = $(".ctlyt-menu").offset().top;
     $(window).scroll(function() {
         var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        if($menu_top>scrollTop){
+        var $width = $(window).width();
+        if($width>990){
+            if($menu_top>scrollTop){
             $(".ctlyt-menu").removeAttr("style"); 
+            }else{
+                $(".ctlyt-menu").css({'position': 'fixed','top':'75px'});
+            }
+            if($share_top>scrollTop){
+                $(".ctlyt-share").css({'position': 'absolute',"top":$share_top+"px"});
+            }else{
+                $(".ctlyt-share").css({'position': 'fixed',"top":"0px"});
+            }
         }else{
-            $(".ctlyt-menu").css({'position': 'fixed','top':'75px'});
+             $(".ctlyt-share").hide();
         }
-        if($share_top>scrollTop){
-            $(".ctlyt-share").css({'position': 'absolute',"top":$share_top+"px"});
-        }else{
-            $(".ctlyt-share").css({'position': 'fixed',"top":"0px"});
-        }
+        
     })
 </script>
