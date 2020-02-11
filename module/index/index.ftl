@@ -163,23 +163,25 @@
                             </aside>
                         </#if>
                         <#if settings.sidebar_categories!true>
-                            <aside class="single_sidebar_widget post_category_widget">
-                                <h4 class="widget_title">分类</h4>
-                                <ul class="list cat-list">
-                                    <@categoryTag method="list">
-                                        <#list categories as category>
-                                            <#if category.postCount gt 0 >
-                                                <li>
-                                                    <a href="${context!}/categories/${category.slugName!}" class="d-flex justify-content-between">
-                                                        <p>${category.name}</p>
-                                                        <p>${category.postCount}</p>
-                                                    </a>
-                                                </li>
-                                            </#if>
-                                        </#list>
-                                    </@categoryTag>														
-                                </ul>
-                            </aside>
+                            <#if categories?? && categories?size gt 0>
+                                <aside class="single_sidebar_widget post_category_widget">
+                                    <h4 class="widget_title">分类</h4>
+                                    <ul class="list cat-list">
+                                        <@categoryTag method="list">
+                                            <#list categories as category>
+                                                <#if category.postCount gt 0 >
+                                                    <li>
+                                                        <a href="${context!}/categories/${category.slugName!}" class="d-flex justify-content-between">
+                                                            <p>${category.name}</p>
+                                                            <p>${category.postCount}</p>
+                                                        </a>
+                                                    </li>
+                                                </#if>
+                                            </#list>
+                                        </@categoryTag>														
+                                    </ul>
+                                </aside>
+                            </#if>
                         </#if>
                         <#if settings.sidebar_tagcloud!true>
                             <@tagTag method="list">
