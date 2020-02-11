@@ -125,8 +125,8 @@ post:
       name: share_build
       label: 分享组件
       type: text
-      placeholder: '组件名如：qzone,qq,weibo,wechat,douban'
-      defalut: 'qzone,qq,weibo,wechat'
+      placeholder: '组件名如：'qzone','qq','weibo','wechat','douban''
+      defalut: ''qzone','qq','weibo','wechat''
     donate_alipay:
       name: donate_alipay
       label: 支付宝捐赠二维码
