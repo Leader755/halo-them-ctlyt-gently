@@ -20,7 +20,7 @@
             yes_right: "10px",
             yes_top: "",
             yes_left: "",
-            yes_title: "回顶部",
+            yes_title: "Top",
             yes_opacity: "0.8",
             yes_hoverOpacity:"1",
             yes_radius: "0%",

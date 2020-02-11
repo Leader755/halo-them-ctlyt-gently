@@ -67,8 +67,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> ${opt
     <script>
             $(document).ready(function () {
                 $.fn.yestop({
-                    "yes_image": "", "yes_radius": "30%"
-                    , "yes_html": "<i class='fa fa-arrow-up' aria-hidden='true'></i>","yes_backColor":"white","yes_hoverHtml":"回顶部"
+                    "yes_image": "", "yes_radius": "30%",
+                    , "yes_html": "<i class='fa fa-arrow-up' aria-hidden='true'></i>","yes_backColor":"#eee","yes_hoverHtml":"<i class='fa fa-arrow-up' aria-hidden='false'></i>"
                 });
             })
     </script>
