@@ -188,7 +188,7 @@
         if($menu_top>scrollTop){
             $(".ctlyt-menu").removeAttr("style"); 
         }else{
-            $(".ctlyt-menu").css({'position': 'fixed','top':'30px'});
+            $(".ctlyt-menu").css({'position': 'fixed','top':'75px'});
         }
         if($share_top>scrollTop){
             $(".ctlyt-share").css({'position': 'absolute',"top":$share_top+"px"});
