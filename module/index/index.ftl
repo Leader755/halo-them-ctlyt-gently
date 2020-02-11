@@ -146,28 +146,30 @@
                             </aside>
                         </#if>
                         <#if settings.sidebar_recentpost!true>
-                            <aside class="single_sidebar_widget popular_post_widget">
-                                <h3 class="widget_title">最新文章</h3>
-                                <@postTag method="latest" top="5">
-                                    <#list posts as post>
-                                        <div class="media post_item">
-                                            <img class="img-width" src="${post.thumbnail!}" alt="${post.title!}">
-                                            <div class="media-body">
-                                                <a href="${context!}/archives/${post.url!}"><h3>${post.title!}</h3></a>
-                                                <p>${post.createTime?string["EEE MMM d"]}</p>
+                            <@postTag method="latest" top="5">
+                                <#if posts.content?size gt 0>
+                                    <aside class="single_sidebar_widget popular_post_widget">
+                                        <h3 class="widget_title">最新文章</h3>
+                                        <#list posts as post>
+                                            <div class="media post_item">
+                                                <img class="img-width" src="${post.thumbnail!}" alt="${post.title!}">
+                                                <div class="media-body">
+                                                    <a href="${context!}/archives/${post.url!}"><h3>${post.title!}</h3></a>
+                                                    <p>${post.createTime?string["EEE MMM d"]}</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </#list>
-                                </@postTag>
-                                <div class="br"></div>
-                            </aside>
+                                        </#list>
+                                        <div class="br"></div>
+                                    </aside>
+                                </#if>
+                            </@postTag>
                         </#if>
                         <#if settings.sidebar_categories!true>
-                            <#if categories?? && categories?size gt 0>
-                                <aside class="single_sidebar_widget post_category_widget">
-                                    <h4 class="widget_title">分类</h4>
-                                    <ul class="list cat-list">
-                                        <@categoryTag method="list">
+                            <@categoryTag method="list">
+                                <#if categories?? && categories?size gt 0>
+                                    <aside class="single_sidebar_widget post_category_widget">
+                                        <h4 class="widget_title">分类</h4>
+                                        <ul class="list cat-list">
                                             <#list categories as category>
                                                 <#if category.postCount gt 0 >
                                                     <li>
@@ -177,11 +179,11 @@
                                                         </a>
                                                     </li>
                                                 </#if>
-                                            </#list>
-                                        </@categoryTag>														
-                                    </ul>
-                                </aside>
-                            </#if>
+                                            </#list>                                                    
+                                        </ul>
+                                    </aside>
+                                </#if>
+                             </@categoryTag>	
                         </#if>
                         <#if settings.sidebar_tagcloud!true>
                             <@tagTag method="list">
