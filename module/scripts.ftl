@@ -13,5 +13,4 @@
 <script src="${static!}/source/js/jquery.ajaxchimp.min.js"></script>
 <script src="${static!}/source/js/mail-script.js"></script>
 <script src="${static!}/source/js/theme.js"></script>
-<script src="${static!}/source/js/top.js"></script>
 ${options.blog_statistics_code!}
