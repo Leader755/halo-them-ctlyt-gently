@@ -52,8 +52,8 @@
                     ${post.formatContent!}
                 </div>
                 <div class="news_d_footer">
-                    <a href=""><i class="lnr lnr lnr-heart"></i>${post.likes!0}个人赞了</a>
-                    <a class="ml-auto" href=""><i class="fa fa-eye"></i>${post.visits!0}</a>
+                    <a href=""><i class="lnr lnr lnr-heart"></i>${post.likes!}个人赞了</a>
+                    <a class="" href=""><i class="fa fa-eye"></i>${post.visits!}</a>
                     <#if settings.share_type>
                         <div id="share"></div>
                     </#if>
@@ -166,7 +166,8 @@
 <script src="${static!}/source/js/jquery.share.min.js"></script>
 <script>
     hljs.initHighlightingOnLoad();
-
+    $('#share').share({sites: ['qzone', 'qq', 'weibo','wechat']});
+    
     $(document).ready(function(e) {
         $("#content").children().each(function(index, element) {
             var tagName=$(this).get(0).tagName;
@@ -189,14 +190,11 @@
     }
     $(window).scroll(function() {
         var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        if($width>990){
-            if($menu_top>scrollTop){
-            $(".ctlyt-menu").removeAttr("style"); 
-            }else{
-                $(".ctlyt-menu").css({'position': 'fixed','top':'75px'});
-            }
+        if($menu_top>scrollTop){
+        $(".ctlyt-menu").removeAttr("style"); 
+        }else{
+            $(".ctlyt-menu").css({'position': 'fixed','top':'75px'});
         }
     })
 
-    $('#share').share({sites: ['qzone', 'qq', 'weibo','wechat']});
 </script>
