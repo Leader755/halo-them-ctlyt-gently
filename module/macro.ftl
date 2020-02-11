@@ -152,7 +152,12 @@
             z-index:100;
             width: 100%;
             background: white;
-        }   
+        }
+        <#if !settings.head_nav>
+            .header_area {
+                position: absolute;
+            }
+        </#if>
 
 
     </style>
