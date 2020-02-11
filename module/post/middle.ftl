@@ -167,7 +167,7 @@
 <script>
     hljs.initHighlightingOnLoad();
 
-    $('#share').share({sites: [${settings.share_build!}]);
+    $('#share').share({sites: [${settings.share_build!}}]);
     
     $(document).ready(function(e) {
         $("#content").children().each(function(index, element) {
