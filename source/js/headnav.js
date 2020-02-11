@@ -2,7 +2,7 @@ class headnav{
     constructor() {
 		this.currentId = null;
 		this.currentTab = null;
-		this.tabContainerHeight = 120;
+		this.tabContainerHeight = 40;
 		let self = this;
 		$('.et-hero-tab').click(function() { 
 			self.onTabClick(event, $(this)); 
