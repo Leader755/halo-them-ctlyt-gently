@@ -186,6 +186,11 @@
     var $width =  $(window).width();
     $(window).resize(function(){ 
         $width =  $(window).width();
+        if($width>990){
+            $(".ctlyt-menu").css({'position': 'fixed','top':'75px'});
+        }else{
+            $(".ctlyt-menu").removeAttr("style"); 
+        }
     });
 
     $(window).scroll(function() {
@@ -196,8 +201,6 @@
             }else{
                 $(".ctlyt-menu").css({'position': 'fixed','top':'75px'});
             }
-        }else{
-            $(".ctlyt-menu").removeAttr("style"); 
         }
     })
 
