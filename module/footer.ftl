@@ -66,7 +66,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> ${opt
     <script src="${static!}/source/js/yestop.js"></script>
     <script>
             $(document).ready(function () {
-                $.fn.yestop({});
+                $.fn.yestop({
+                    "yes_image": "", "yes_radius": "30%"
+                    , "yes_html": "<i class='fa fa-arrow-up' aria-hidden='true'></i>","yes_backColor":"white","yes_hoverHtml":"回顶部"
+                });
             })
     </script>
 </footer>
