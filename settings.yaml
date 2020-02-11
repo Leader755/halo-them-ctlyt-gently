@@ -12,6 +12,17 @@ sidebar:
           label: 开启
         - value: false
           label: 关闭
+    head_nav:
+      name: head_nav
+      label: 粘性导航栏
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
     sidebar_profile:
       name: sidebar_profile
       label: 侧边栏个人资料

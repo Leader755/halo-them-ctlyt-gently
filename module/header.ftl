@@ -88,4 +88,7 @@
         </div>
     </div>
 </header>
+<#if settings.headnav!true>
+<script src="${static!}/source/js/headnav.js"></script>
+</#if>
 <!--================Header Menu Area =================-->

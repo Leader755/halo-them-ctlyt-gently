@@ -146,6 +146,11 @@
             font-size:11px;
             padding-left: 25px;
         }
+        .et-hero-tabs-container--top {
+            position: fixed;
+            top: 0;
+            z-index:100;
+        }   
 
 
     </style>
