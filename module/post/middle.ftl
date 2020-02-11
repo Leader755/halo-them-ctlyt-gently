@@ -27,11 +27,6 @@
         <div class="row">
  
             <div class="col-lg-9">
-                <div class="level ctlyt-share" style="padding-top:90px;height: 100%;width: 30px;z-index: 100;left: 70px;">
-                    <#if settings.share_type?? && settings.share_type!=''>
-                        <#include "../share/${settings.share_type}.ftl">
-                    </#if>
-                </div>
                 <div class="main_blog_details">
                 <img class="img-fluid" src="${post.thumbnail!}" alt="${post.title!}">
                 <a href="#"><h4>${post.title!}</h4></a>
@@ -59,6 +54,11 @@
                 <div class="news_d_footer">
                     <a href=""><i class="lnr lnr lnr-heart"></i>${post.likes!0}个人赞了</a>
                     <a class="justify-content-center ml-auto" href=""><i class="fa fa-eye"></i>${post.visits!0}</a>
+                    <div class="level ctlyt-share">
+                        <#if settings.share_type?? && settings.share_type!=''>
+                            <#include "../share/${settings.share_type}.ftl">
+                        </#if>
+                    </div>
                 </div>
             </div>
             <div class="navigation-area">
@@ -196,14 +196,6 @@
             }else{
                 $(".ctlyt-menu").css({'position': 'fixed','top':'75px'});
             }
-            if($share_top>scrollTop){
-                $(".ctlyt-share").css({'position': 'absolute',"top":$share_top+"px","left":"-30px"});
-            }else{
-                $(".ctlyt-share").css({'position': 'fixed',"top":"0px","left":"-30px"});
-            }
-        }else{
-             $(".ctlyt-share").hide();
         }
-        
     })
 </script>
