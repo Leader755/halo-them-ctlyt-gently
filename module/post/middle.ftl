@@ -28,7 +28,7 @@
  
             <div class="col-lg-9">
                 <div class="main_blog_details">
-                    <#if post.thumbnail??>
+                    <#if (post.thumbnail)?? >
                         <img class="img-fluid" src="${post.thumbnail!}" alt="${post.title!}">
                     </#if>
                     <a href="#"><h4>${post.title!}</h4></a>
@@ -80,7 +80,7 @@
                         <#if prePost??>
                             <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
                                 <div class="thumb">
-                                    <a href="${context!}/archives/${prePost.url}"><img class="img-fluid" src="${prePost.thumbnail!}" alt="${prePost.title!}"></a>
+                                    <a href="${context!}/archives/${prePost.url}"><img class="img-fluid" src="${prePost.thumbnail!static+'/source/img/bg.png'}" alt="${prePost.title!}"></a>
                                 </div>
                                 <div class="arrow">
                                     <a href="${context!}/archives/${prePost.url}"><span class="lnr text-white lnr-arrow-left"></span></a>
@@ -101,7 +101,7 @@
                                     <a href="${context!}/archives/${nextPost.url}"><span class="lnr text-white lnr-arrow-right"></span></a>
                                 </div>
                                 <div class="thumb">
-                                    <a href="${context!}/archives/${nextPost.url}"><img class="img-fluid" src="${nextPost.thumbnail!}" alt="${nextPost.title!}"></a>
+                                    <a href="${context!}/archives/${nextPost.url}"><img class="img-fluid" src="${nextPost.thumbnail!static+'/source/img/bg.png'}" alt="${nextPost.title!}"></a>
                                 </div>										
                             </div>	
                         </#if>							
