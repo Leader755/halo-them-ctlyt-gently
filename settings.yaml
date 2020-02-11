@@ -123,7 +123,7 @@ post:
           label: 关闭
     share_build:
       name: share_build
-      label: 分享组件
+      label: 分享组件 'qzone','qq','weibo','wechat','douban
       type: text
       placeholder: "组件名如：'qzone','qq','weibo','wechat','douban'"
       defalut: ""
