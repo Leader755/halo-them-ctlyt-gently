@@ -186,6 +186,7 @@
     var $width =  $(window).width();
     $(window).resize(function(){ 
         $width =  $(window).width();
+        $(".ctlyt-menu").removeAttr("style"); 
     });
 
     $(window).scroll(function() {
