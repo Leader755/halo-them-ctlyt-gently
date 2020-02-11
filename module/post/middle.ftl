@@ -184,9 +184,6 @@
 
     var $menu_top = $(".ctlyt-menu").offset().top;
     var $width =  $(window).width();
-    $(window).resize(function () {  
-        $width = $(window).width();
-    }
     $(window).scroll(function() {
         var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         if($menu_top>scrollTop){
