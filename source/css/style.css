@@ -178,7 +178,6 @@ button:focus {
   top: 0px;
   z-index: 3;
 }
-
 .header_area + section, .header_area + div {
   margin-top: 145px;
 }
