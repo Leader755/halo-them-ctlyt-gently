@@ -147,7 +147,7 @@
                         </#if>
                         <#if settings.sidebar_recentpost!true>
                             <@postTag method="latest" top="5">
-                                <#if posts.content?size gt 0>
+                                <#if posts?? && posts?size gt 0>
                                     <aside class="single_sidebar_widget popular_post_widget">
                                         <h3 class="widget_title">最新文章</h3>
                                         <#list posts as post>
