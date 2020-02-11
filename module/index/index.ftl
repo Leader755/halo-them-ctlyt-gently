@@ -61,7 +61,7 @@
                         <#list posts.content as post>
                             <article class="blog_style1">
                                 <div class="blog_img">
-                                    <img class="img-fluid" src="<#if post.thumbnail?? && post.thumbnail != ''>${post.thumbnail}<#else>/bg.png</#if>" alt="${post.title!}">
+                                    <img class="img-fluid" src="<#if post.thumbnail?? && post.thumbnail != ''>${post.thumbnail}<#else>${static!}/source/img/bg.png</#if>" alt="${post.title!}">
                                 </div>
                                 <div class="blog_text">
                                     <div class="blog_text_inner">
