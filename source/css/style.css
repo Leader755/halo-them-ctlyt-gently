@@ -1726,6 +1726,8 @@ button:focus {
   width: 100%;
   padding-top: 15px;
   margin-top: 40px;
+  justify-content: space-between;
+  line-height: 40px;
 }
 
 .main_blog_details .news_d_footer a {

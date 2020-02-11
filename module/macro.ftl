@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="${static!}/source/css/style.css">
     <link rel="stylesheet" href="${static!}/source/css/responsive.css">
 
-
+    <link rel="stylesheet" href="${static!}/source/css/share.min.css">
     <style>
         .logo_h{
             font-weight: bold;

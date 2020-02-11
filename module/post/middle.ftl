@@ -53,12 +53,10 @@
                 </div>
                 <div class="news_d_footer">
                     <a href=""><i class="lnr lnr lnr-heart"></i>${post.likes!0}个人赞了</a>
-                    <a class="justify-content-center ml-auto" href=""><i class="fa fa-eye"></i>${post.visits!0}</a>
-                    <div class="level ctlyt-share">
-                        <#if settings.share_type?? && settings.share_type!=''>
-                            <#include "../share/${settings.share_type}.ftl">
-                        </#if>
-                    </div>
+                    <a class="ml-auto" href=""><i class="fa fa-eye"></i>${post.visits!0}</a>
+                    <#if settings.share_type>
+                        <div id="share"></div>
+                    </#if>
                 </div>
             </div>
             <div class="navigation-area">
@@ -163,8 +161,9 @@
     <link rel="stylesheet"
     href="${static!}/source/css/monokai.css">
 </#if>
-    
+<#--  代码高亮  -->
 <script src="${static!}/source/js/highlight.pack.js"></script>
+<script src="${static!}/source/js/jquery.share.min.js"></script>
 <script>
     hljs.initHighlightingOnLoad();
 
@@ -198,4 +197,6 @@
             }
         }
     })
+
+    $('#share').share({sites: ['qzone', 'qq', 'weibo','wechat']});
 </script>

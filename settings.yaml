@@ -112,16 +112,15 @@ post:
   items:
     share_type:
       name: share_type
-      label: 文章分享组件
-      type: select
-      default: 'sharejs'
+      label: 文章分享
+      type: radio
+      data-type: bool
+      default: true
       options:
-        - value: ''
-          label: '无'
-        - value: addtoany
-          label: addtoany
-        - value: sharejs
-          label: sharejs
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
     donate_alipay:
       name: donate_alipay
       label: 支付宝捐赠二维码
