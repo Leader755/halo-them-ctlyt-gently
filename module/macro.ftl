@@ -111,38 +111,38 @@
             text-align: center;
         }
         /*  导航目录 */
-        .menu{
+        .ctlyt-menu{
             display: flex;
             flex-direction: row-reverse;
             flex-wrap: wrap;
             justify-content: start;
         }
-        .menu>a{
+        .ctlyt-menu>a{
             color: #000;
             font-size:14px;
             font-weight: bold;
             width: 100%;
         }
-        .menu [href|='#mark-H1']{
+        .ctlyt-menu [href|='#mark-H1']{
             font-size:16px;
         }
-        .menu [href|='#mark-H2']{
+        .ctlyt-menu [href|='#mark-H2']{
             font-size:15px;
             padding-left: 5px;
         }
-        .menu [href|='#mark-H3']{
+        .ctlyt-menu [href|='#mark-H3']{
             font-size:14px;
             padding-left: 10px;
         }
-        .menu [href|='#mark-H4']{
+        .ctlyt-menu [href|='#mark-H4']{
             font-size:13px;
             padding-left: 15px;
         }
-        .menu [href|='#mark-H5']{
+        .ctlyt-menu [href|='#mark-H5']{
             font-size:12px;
             padding-left: 20px;
         }
-        .menu [href|='#mark-H6']{
+        .ctlyt-menu [href|='#mark-H6']{
             font-size:11px;
             padding-left: 25px;
         }
