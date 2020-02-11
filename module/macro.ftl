@@ -110,11 +110,6 @@
         .ctlyt-domate-h{
             text-align: center;
         }
-        /* 回顶部 */
-        .actGotop{position:fixed; _position:absolute; bottom:1rem; right:0.5rem; width:150px; height:195px; display:none;z-index:100}
-        .actGotop a,.actGotop a:link{width:150px;height:195px;display:inline-block; background:url(${static!}/source/img/gotop.png) no-repeat; _background:url(${static!}/source/img/gotop.gif) no-repeat; outline:none;}
-        .actGotop a:hover{width:150px; height:195px; background:url(${static!}/source/img/gotopd.gif) no-repeat; outline:none;}
-
         /*  导航目录 */
         .menu{
             display: flex;

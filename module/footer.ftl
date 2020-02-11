@@ -62,6 +62,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> ${opt
 </p>
         </div>
     </div>
-    <div class="actGotop"><a href="javascript:;" title="返回顶部"></a></div>
+    <#--  回顶部  -->
+    <script src="${static!}/source/js/yestop.js"></script>
+    <script>
+            $(document).ready(function () {
+                $.fn.yestop({});
+            })
+    </script>
 </footer>
 <!--================ End footer Area  =================-->
