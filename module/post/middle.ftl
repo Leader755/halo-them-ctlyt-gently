@@ -167,7 +167,7 @@
 <script>
     hljs.initHighlightingOnLoad();
 
-    $('#share').share({sites: ['qzone', 'qq', 'weibo','wechat']});
+    $('#share').share({sites: ${settings.share_build}.join(",")});
     
     $(document).ready(function(e) {
         $("#content").children().each(function(index, element) {
