@@ -168,6 +168,8 @@
 <script src="${static!}/source/js/jquery.share.min.js"></script>
 <script>
     hljs.initHighlightingOnLoad();
+    //显示行号
+    hljs.initLineNumbersOnLoad();
 
     $('#share').share({sites: [${settings.share_build!} ]});
     
