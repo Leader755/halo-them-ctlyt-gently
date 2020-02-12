@@ -7,7 +7,7 @@
       var block={};
       for(var i=0;i<codeList.length;i++){
         var codeHtml=codeList[i].innerHTML;
-        codeHtml="<ul><li>"+codeHtml.replace(/\n/g, "\n</li><li>") + "\n</li></ul>";
+        codeHtml="<ol class='ctlyt-number-ol'><li>"+codeHtml.replace(/\n/g, "\n</li><li>") + "\n</li></ol>";
         codeList[i].innerHTML=codeHtml;
       }
     }
