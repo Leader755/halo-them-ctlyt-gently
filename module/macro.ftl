@@ -28,41 +28,8 @@
     <link rel="stylesheet" href="${static!}/source/css/responsive.css">
 
     <link rel="stylesheet" href="${static!}/source/css/share.min.css">
+    <link rel="stylesheet" href="${static!}/source/css/other.css">
     <style>
-        .logo_h{
-            font-weight: bold;
-        }
-        .logo_h>img{
-            height:40px;
-            width: 40px !important;
-            border-radius: 20px;
-            margin-right: 20px;
-        }
-
-        .ctlyt-logo {
-            font-weight: bold;
-            font-size: 26px;
-            color: #000;
-        }
-        .ctlyt-logo>img{
-            height:60px;
-            border-radius: 30px;
-            margin-right: 20px;
-        }
-        .ctlyt-buttom-links{
-            height:60px;
-            width:60px;
-            background-color: #fff;
-        }
-        .ctlyt-p-text{
-            word-wrap: break-word;
-        }
-        .ctlyt-search-blog{
-            height:100px;
-        }
-        .search_widget{
-            margin:2px 20px;
-        }
         .home_banner_area{
             background: url(${(settings.banner_bg)!static+'/source/img/bg.png'}) no-repeat scroll center left;          
             background-size: auto;
@@ -73,85 +40,6 @@
             background: url(${(settings.other_banner_bg)!static+'/source/img/bg.png'}) no-repeat scroll center left;
             background-color: #f9f9ff;
             background-size: auto;
-        }
-        .img-width{
-            flex-grow: 0;
-            flex-shrink: 0;
-            width: 100px;
-            height: 100px;
-        }
-        .is-invisible,.is-hidden-mobile{
-            display: none;
-        }
-        blockquote {
-            border-left: 0.2rem solid #007bff;
-            padding-left: 1rem;
-            background-color: #f9f9ff;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
-        blockquote img,img{
-            max-width: 100%;
-        }
-        .thumb>a>img{
-            flex-grow: 0;
-            flex-shrink: 0;
-            width: 100px;
-            height: 100px;
-        }
-        .ctlyt-domate{
-            justify-content: center;
-        }
-        .ctlyt-domate img{
-            margin: 5px 40px;
-            width: 40%;
-			height: 50%
-        }
-        .ctlyt-domate-h{
-            text-align: center;
-        }
-        /*  导航目录 */
-        .ctlyt-menu{
-            display: flex;
-            flex-direction: row-reverse;
-            flex-wrap: wrap;
-            justify-content: start;
-        }
-        .ctlyt-menu>a{
-            color: #000;
-            font-size:14px;
-            font-weight: bold;
-            width: 100%;
-        }
-        .ctlyt-menu [href|='#mark-H1']{
-            font-size:16px;
-        }
-        .ctlyt-menu [href|='#mark-H2']{
-            font-size:15px;
-            padding-left: 5px;
-        }
-        .ctlyt-menu [href|='#mark-H3']{
-            font-size:14px;
-            padding-left: 10px;
-        }
-        .ctlyt-menu [href|='#mark-H4']{
-            font-size:13px;
-            padding-left: 15px;
-        }
-        .ctlyt-menu [href|='#mark-H5']{
-            font-size:12px;
-            padding-left: 20px;
-        }
-        .ctlyt-menu [href|='#mark-H6']{
-            font-size:11px;
-            padding-left: 25px;
-        }
-        .et-hero-tabs-container--top {
-            position: fixed;
-            top: 0;
-            z-index:100;
-            width: 100%;
-            background: white;
         }
         <#if !settings.head_nav>
             .header_area {
