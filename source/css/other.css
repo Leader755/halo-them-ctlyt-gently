@@ -114,7 +114,7 @@ blockquote img,img{
 .ctlyt-number-ol>li{
     list-style: decimal-leading-zero;
     border-left: 1px solid #ddd !important;
-    padding: 5px!important;
+    padding:0 5px!important;
     margin: 0 !important;
     white-space: pre;
 }
