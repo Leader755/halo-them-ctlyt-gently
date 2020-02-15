@@ -57,6 +57,9 @@ button:focus{
 .container{
     @media(min-width:1400px){
         max-width: 1400px;
+	}
+	@media(min-width:1620px){
+        max-width: 1620px;
     }
 }
 @media(min-width: 1620px){
