@@ -114,6 +114,7 @@ button:focus {
 
 @media (min-width: 1200px) {
   .container {
+<<<<<<< HEAD
     max-width: 1155px;
   }
 }
@@ -121,10 +122,14 @@ button:focus {
   .box_1620 {
     max-width: 1210px;
     margin: auto;
+=======
+    max-width: 1200px;
+>>>>>>> 111b39b2edba6bea9ffe3f7aaeb908bea4df56cc
   }
 }
 @media (min-width: 1400px) {
   .container {
+<<<<<<< HEAD
     max-width: 1300px;
   }
 }
@@ -132,11 +137,18 @@ button:focus {
   .box_1620 {
     max-width: 1420px;
     margin: auto;
+=======
+    max-width: 1400px;
+>>>>>>> 111b39b2edba6bea9ffe3f7aaeb908bea4df56cc
   }
 }
 @media (min-width: 1620px) {
   .container {
+<<<<<<< HEAD
     max-width: 1445px;
+=======
+    max-width: 1620px;
+>>>>>>> 111b39b2edba6bea9ffe3f7aaeb908bea4df56cc
   }
 }
 
