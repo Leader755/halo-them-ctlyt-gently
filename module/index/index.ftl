@@ -60,7 +60,7 @@
                     <#if posts.content?size gt 0>
                         <#list posts.content as post>
                             <article class="blog_style1">
-                                <#if !settings.sidebar.not_img>
+                                <#if settings.not_img!true>
                                 <div class="blog_img">
                                     <img class="img-fluid" src="<#if post.thumbnail?? && post.thumbnail != ''>${post.thumbnail}<#else>${static!}/source/img/bg.png</#if>" alt="${post.title!}">
                                 </div>
