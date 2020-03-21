@@ -114,7 +114,7 @@ button:focus {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1155px;
+    max-width: 990px;
   }
 }
 @media (min-width: 1200px) {
@@ -125,7 +125,7 @@ button:focus {
 }
 @media (min-width: 1400px) {
   .container {
-    max-width: 1300px;
+    max-width: 1190px;
   }
 }
 @media (min-width: 1400px) {
@@ -136,7 +136,7 @@ button:focus {
 }
 @media (min-width: 1620px) {
   .container {
-    max-width: 1450px;
+    max-width: 1410px;
   }
 }
 
