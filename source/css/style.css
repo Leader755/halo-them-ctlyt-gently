@@ -428,8 +428,8 @@ button:focus {
 }
 
 .home_banner_area .blog_text_slider {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   position: relative;
 }
 
@@ -462,7 +462,7 @@ button:focus {
 
 .blog_text {
   background: #fff;
-  padding: 115px 65px 65px 65px;
+  padding: 65px 65px 65px 65px;
 }
 
 .blog_text .cat {
