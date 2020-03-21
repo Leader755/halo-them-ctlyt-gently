@@ -80,7 +80,7 @@ sidebar:
           label: 关闭
     sidebar_tags:
       name: sidebar_tags
-      label: 侧边栏
+      label: 主页侧边栏
       type: radio
       data-type: bool
       default: true

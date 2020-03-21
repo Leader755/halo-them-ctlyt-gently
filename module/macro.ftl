@@ -46,6 +46,9 @@
                 position: absolute;
             }
         </#if>
+        .blog_box{
+            height:120px;
+        }
 
 
     </style>

@@ -60,12 +60,14 @@
                     <#if posts.content?size gt 0>
                         <#list posts.content as post>
                             <article class="blog_style1">
-                                
+                                <#if settings.not_img>
                                 <div class="blog_img">
-                                <#if settings.not_img!false>
                                     <img class="img-fluid" src="<#if post.thumbnail?? && post.thumbnail != ''>${post.thumbnail}<#else>${static!}/source/img/bg.png</#if>" alt="${post.title!}">
-                                </#if>
                                 </div>
+                                <#else>
+                                <div class="blog_box"></div>
+                                </#if>
+                                
                                 
                                 <div class="blog_text">
                                     <div class="blog_text_inner">
