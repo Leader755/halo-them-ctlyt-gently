@@ -89,6 +89,17 @@ sidebar:
           label: 开启
         - value: false
           label: 关闭
+    not_img:
+      name: not_img
+      label: 无图模式
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
     banner_bg:
       name: banner_bg
       label: 主页banner图
@@ -107,17 +118,7 @@ sidebar:
       type: text
       placeholder: '图片地址'
       default: null
-    not_img:
-      name: not_img
-      label: 无图模式
-      type: radio
-      data-type: bool
-      default: false
-      options:
-        - value: true
-          label: 开启
-        - value: false
-          label: 关闭
+
 post:
   label: 文章设置
   items:
