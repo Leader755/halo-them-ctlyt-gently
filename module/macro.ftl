@@ -47,7 +47,7 @@
             }
         </#if>
         .blog_box{
-            height:120px;
+            height:100px;
         }
 
 
