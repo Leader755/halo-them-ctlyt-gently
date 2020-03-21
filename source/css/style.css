@@ -575,12 +575,12 @@ button:focus {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  padding: 75px 0px;
+  padding: 50px 0px;
 }
 
 .banner_area .banner_inner .banner_content {
   background: #fff;
-  padding: 95px 0px;
+  padding: 50px 0px;
 }
 
 .banner_area .banner_inner .banner_content h2 {
