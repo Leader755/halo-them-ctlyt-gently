@@ -24,7 +24,11 @@
                         <div class="col-lg-3">
                             <article class="blog_style1 small">
                                 <div class="blog_img">
+                                <#if>
+                                    <img class="img-fluid" src="${category.thumbnail}" alt="${tag.slugName}">
+                                <#else>
                                     <img class="img-fluid" src="${(settings.other_bg)!static+'/source/img/bg.png'}" alt="${category.description}">
+                                </#if>
                                 </div>
                                 <div class="blog_text">
                                     <div class="blog_text_inner">
