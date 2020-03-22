@@ -3667,16 +3667,16 @@ h6 {
 }
 
 .blog_style1 .blog_text .blog_text_inner {
-  background: #fff;
+  background: rgba(255,255,255,0.85);
   margin-top: -100px;
   position: relative;
   -webkit-box-shadow: 0px 10px 20px 0px rgba(153, 153, 153, 0.1);
   box-shadow: 0px 10px 20px 0px rgba(153, 153, 153, 0.1);
-  padding: 40px;
+  padding: 20px 40px;
 }
 
 .blog_style1 .blog_text .blog_text_inner .cat {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .blog_style1 .blog_text .blog_text_inner .cat .cat_btn {
@@ -3686,7 +3686,7 @@ h6 {
 }
 
 .blog_style1 .blog_text .blog_text_inner h4 {
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Inconsolata", monospace;
   line-height: 30px;
   color: #000;
