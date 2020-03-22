@@ -18,14 +18,14 @@
                                     <div class="blog_text">
                                         <div class="cat">
                                             <#list post.categories as category>
-                                                <a class="cat_btn" href="${context!}/categories/${category.slugName!}">${category.name!}</a>
+                                                <a class="cat_btn" href="${context!}categories/${category.slugName!}">${category.name!}</a>
                                             </#list>
                                             <span><i class="fa fa-calendar" aria-hidden="true"></i> ${post.createTime?string["EEE MMM d"]}</span>
                                             <span><i class="fa fa-eye" aria-hidden="true"></i> ${post.visits!0}</span>
                                         </div>
-                                        <a href="${context!}/archives/${post.url!}"><h4>${post.title!}</h4></a>
+                                        <a href="${context!}archives/${post.url!}"><h4>${post.title!}</h4></a>
                                         <p class="ctlyt-p-text">${post.summary!}</p>
-                                        <a class="blog_btn" href="${context!}/archives/${post.url!}">阅读更多</a>
+                                        <a class="blog_btn" href="${context!}archives/${post.url!}">阅读更多</a>
                                     </div>
                                 </div>
                             </#if>
@@ -73,14 +73,14 @@
                                     <div class="blog_text_inner">
                                         <div class="cat">
                                             <#list post.categories as category>
-                                                <a class="cat_btn" href="${context!}/categories/${category.slugName!}">${category.name!}</a>
+                                                <a class="cat_btn" href="${context!}categories/${category.slugName!}">${category.name!}</a>
                                             </#list>
                                             <span><i class="fa fa-calendar" aria-hidden="true"></i> ${post.createTime?string["EEE MMM d"]}</span>
                                             <span><i class="fa fa-eye" aria-hidden="true"></i> ${post.visits!0}</span>
                                         </div>
-                                        <a href="${context!}/archives/${post.url!}"><h4>${post.title!}</h4></a>
+                                        <a href="${context!}archives/${post.url!}"><h4>${post.title!}</h4></a>
                                         <p class="ctlyt-p-text">${post.summary!}</p>
-                                        <a class="blog_btn" href="${context!}/archives/${post.url!}">阅读更多</a>
+                                        <a class="blog_btn" href="${context!}archives/${post.url!}">阅读更多</a>
                                     </div>
                                 </div>
                             </article>
@@ -89,7 +89,7 @@
                             <nav class="blog-pagination justify-content-center d-flex">
                                 <ul class="pagination">
                                     <li class="page-item <#if posts.number gt 0><#else > is-invisible is-hidden-mobile</#if>">
-                                        <a href="${context!}/page/${posts.number}" class="page-link" aria-label="上一页">
+                                        <a href="${context!}page/${posts.number}" class="page-link" aria-label="上一页">
                                             <span aria-hidden="true">
                                                 <span class="lnr lnr-chevron-left"></span>
                                             </span>
@@ -97,13 +97,13 @@
                                     </li>
                                     <#list rainbow as r>
                                         <#if r == posts.number+1>
-                                            <li class="page-item active"><a href="${context!}/page/${posts.number+1}" class="page-link">${posts.number+1}</a></li>
+                                            <li class="page-item active"><a href="${context!}page/${posts.number+1}" class="page-link">${posts.number+1}</a></li>
                                         <#else>
-                                            <li class="page-item"><a href="${context!}/page/${r}" class="page-link">${r}</a></li>
+                                            <li class="page-item"><a href="${context!}page/${r}" class="page-link">${r}</a></li>
                                         </#if>
                                     </#list>
                                     <li class="page-item <#if posts.getTotalPages() gt posts.number+1><#else > is-invisible is-hidden-mobile</#if>">
-                                        <a href="${context!}/page/${posts.number+2}" class="page-link" aria-label="下一页">
+                                        <a href="${context!}page/${posts.number+2}" class="page-link" aria-label="下一页">
                                             <span aria-hidden="true">
                                                 <span class="lnr lnr-chevron-right"></span>
                                             </span>
@@ -146,7 +146,7 @@
                                     <#if settings.gently_telegram?? && settings.gently_telegram!=''>
                                         <a href="https://t.me/${settings.gently_telegram}" target="_blank"><i class="fa fa-telegram"></i></a>
                                     </#if>
-                                    <a href="${context!}/atom.xml" target="_blank"><i class="fa fa-rss"></i></a>
+                                    <a href="${context!}atom.xml" target="_blank"><i class="fa fa-rss"></i></a>
                                 </div>
                                 <div class="br"></div>
                             </aside>
@@ -160,7 +160,7 @@
                                             <div class="media post_item">
                                                 <img class="img-width" src="${post.thumbnail!}" alt="${post.title!}">
                                                 <div class="media-body">
-                                                    <a href="${context!}/archives/${post.url!}"><h3>${post.title!}</h3></a>
+                                                    <a href="${context!}archives/${post.url!}"><h3>${post.title!}</h3></a>
                                                     <p>${post.createTime?string["EEE MMM d"]}</p>
                                                 </div>
                                             </div>
@@ -179,7 +179,7 @@
                                             <#list categories as category>
                                                 <#if category.postCount gt 0 >
                                                     <li>
-                                                        <a href="${context!}/categories/${category.slugName!}" class="d-flex justify-content-between">
+                                                        <a href="${context!}categories/${category.slugName!}" class="d-flex justify-content-between">
                                                             <p>${category.name}</p>
                                                             <p>${category.postCount}</p>
                                                         </a>
@@ -198,7 +198,7 @@
                                         <h4 class="widget_title">标签云</h4>
                                         <ul class="list">
                                             <#list tags as tag>
-                                                <li><a href="${context!}/tags/${tag.slugName!}">${tag.name!}</a></li>
+                                                <li><a href="${context!}tags/${tag.slugName!}">${tag.name!}</a></li>
                                             </#list>
                                         </ul>
                                     </aside>
@@ -224,14 +224,14 @@
                                     <div class="blog_text_inner">
                                         <div class="cat">
                                             <#list post.categories as category>
-                                                <a class="cat_btn" href="${context!}/categories/${category.slugName!}">${category.name!}</a>
+                                                <a class="cat_btn" href="${context!}categories/${category.slugName!}">${category.name!}</a>
                                             </#list>
                                             <span><i class="fa fa-calendar" aria-hidden="true"></i> ${post.createTime?string["EEE MMM d"]}</span>
                                             <span><i class="fa fa-eye" aria-hidden="true"></i> ${post.visits!0}</span>
                                         </div>
-                                        <a href="${context!}/archives/${post.url!}"><h4>${post.title!}</h4></a>
+                                        <a href="${context!}archives/${post.url!}"><h4>${post.title!}</h4></a>
                                         <p class="ctlyt-p-text">${post.summary!}</p>
-                                        <a class="blog_btn" href="${context!}/archives/${post.url!}">阅读更多</a>
+                                        <a class="blog_btn" href="${context!}archives/${post.url!}">阅读更多</a>
                                     </div>
                                 </div>
                             </article>
@@ -243,7 +243,7 @@
                             <nav class="blog-pagination justify-content-center d-flex">
                                 <ul class="pagination">
                                     <li class="page-item <#if posts.number gt 0><#else > is-invisible is-hidden-mobile</#if>">
-                                        <a href="${context!}/page/${posts.number}" class="page-link" aria-label="上一页">
+                                        <a href="${context!}page/${posts.number}" class="page-link" aria-label="上一页">
                                             <span aria-hidden="true">
                                                 <span class="lnr lnr-chevron-left"></span>
                                             </span>
@@ -251,13 +251,13 @@
                                     </li>
                                     <#list rainbow as r>
                                         <#if r == posts.number+1>
-                                            <li class="page-item active"><a href="${context!}/page/${posts.number+1}" class="page-link">${posts.number+1}</a></li>
+                                            <li class="page-item active"><a href="${context!}page/${posts.number+1}" class="page-link">${posts.number+1}</a></li>
                                         <#else>
-                                            <li class="page-item"><a href="${context!}/page/${r}" class="page-link">${r}</a></li>
+                                            <li class="page-item"><a href="${context!}page/${r}" class="page-link">${r}</a></li>
                                         </#if>
                                     </#list>
                                     <li class="page-item <#if posts.getTotalPages() gt posts.number+1><#else > is-invisible is-hidden-mobile</#if>">
-                                        <a href="${context!}/page/${posts.number+2}" class="page-link" aria-label="下一页">
+                                        <a href="${context!}page/${posts.number+2}" class="page-link" aria-label="下一页">
                                             <span aria-hidden="true">
                                                 <span class="lnr lnr-chevron-right"></span>
                                             </span>

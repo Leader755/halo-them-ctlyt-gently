@@ -10,7 +10,7 @@
             </div>
             <div class="col-lg-7 col-md-6 col-sm-6">
                 <div class="single-footer-widget instafeed">
-                    <h6 class="footer_title"><a href="${context!}/links" style="color:#FFF">友情链接</a></h6>
+                    <h6 class="footer_title"><a href="${context!}links" style="color:#FFF">友情链接</a></h6>
                     <@linkTag method="list">
 	                    <#if links?? && links?size gt 0>
                             <ul class="list instafeed d-flex flex-wrap">

@@ -25,7 +25,7 @@
                             <p>站点名称：${options.blog_title!}</p>
                             <p>站点描述：${user.description!}</p>
                             <p>站点网址：${context!}</p>
-                            <p>LOGO：${context!}/avatar</p>
+                            <p>LOGO：${context!}avatar</p>
                         </div>
                     </div>
                 </article>

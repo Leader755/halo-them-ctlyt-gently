@@ -41,7 +41,7 @@
                         </@menuTag>
                         <#if settings.head_search!true>
                             <li class="nav-item">
-                                <form action="${context!}/search" method="get">
+                                <form action="${context!}search" method="get">
                                     <aside class="single_sidebar_widget search_widget">
                                         <div class="input-group">
                                             <input type="text" name="keyword" class="form-control" placeholder="搜索内容">

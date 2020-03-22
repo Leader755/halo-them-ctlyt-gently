@@ -9,9 +9,9 @@
                     <h2>${post.title!}</h2>
                     <div class="page_link">
                         <a href="${context!}">首页</a>
-                        <a href="${context!}/categories">所有分类</a>
+                        <a href="${context!}categories">所有分类</a>
                         <#list post.categories as category>
-                            <a href="${context!}/categories/${category.slugName!}">${category.name!}</a>
+                            <a href="${context!}categories/${category.slugName!}">${category.name!}</a>
                         </#list>
                        
                         <a href="${post.url!}">${post.title!}</a>
@@ -35,7 +35,7 @@
                     <div class="user_details">
                         <div class="float-left">
                             <#list tags as tag>
-                                <a href="${context!}/tags/${tag.slugName!}">${tag.name!}</a>
+                                <a href="${context!}tags/${tag.slugName!}">${tag.name!}</a>
                             </#list>
                         </div>
                         <div class="float-right">
@@ -80,14 +80,14 @@
                         <#if prePost??>
                             <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
                                 <div class="thumb">
-                                    <a href="${context!}/archives/${prePost.url}"><img class="img-fluid" src="${prePost.thumbnail!}" alt="${prePost.title!}"></a>
+                                    <a href="${context!}archives/${prePost.url}"><img class="img-fluid" src="${prePost.thumbnail!}" alt="${prePost.title!}"></a>
                                 </div>
                                 <div class="arrow">
-                                    <a href="${context!}/archives/${prePost.url}"><span class="lnr text-white lnr-arrow-left"></span></a>
+                                    <a href="${context!}archives/${prePost.url}"><span class="lnr text-white lnr-arrow-left"></span></a>
                                 </div>
                                 <div class="detials">
                                     <p>上一篇</p>
-                                    <a href="${context!}/archives/${prePost.url}"><h4>${prePost.title!}</h4></a>
+                                    <a href="${context!}archives/${prePost.url}"><h4>${prePost.title!}</h4></a>
                                 </div>
                             </div>
                         </#if>
@@ -95,13 +95,13 @@
                             <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
                                 <div class="detials">
                                     <p>下一篇</p>
-                                    <a href="${context!}/archives/${nextPost.url}"><h4>${nextPost.title!}</h4></a>
+                                    <a href="${context!}archives/${nextPost.url}"><h4>${nextPost.title!}</h4></a>
                                 </div>
                                 <div class="arrow">
-                                    <a href="${context!}/archives/${nextPost.url}"><span class="lnr text-white lnr-arrow-right"></span></a>
+                                    <a href="${context!}archives/${nextPost.url}"><span class="lnr text-white lnr-arrow-right"></span></a>
                                 </div>
                                 <div class="thumb">
-                                    <a href="${context!}/archives/${nextPost.url}"><img class="img-fluid" src="${nextPost.thumbnail!}" alt="${nextPost.title!}"></a>
+                                    <a href="${context!}archives/${nextPost.url}"><img class="img-fluid" src="${nextPost.thumbnail!}" alt="${nextPost.title!}"></a>
                                 </div>										
                             </div>	
                         </#if>							
@@ -122,7 +122,7 @@
                                     <#if post_index lt 3>
                                         <div class="media post_item">
                                             <div class="media-body">
-                                                <a href="${context!}/archives/${post.url!}"><h3>${post.title!}</h3></a>
+                                                <a href="${context!}archives/${post.url!}"><h3>${post.title!}</h3></a>
                                                 <p>${post.createTime?string["EEE MMM d"]}</p>
                                             </div>
                                         </div>
@@ -140,7 +140,7 @@
                                     <#if post_index lt 3>
                                         <div class="media post_item">
                                             <div class="media-body">
-                                                <a href="${context!}/archives/${post.url!}"><h3>${post.title!}</h3></a>
+                                                <a href="${context!}archives/${post.url!}"><h3>${post.title!}</h3></a>
                                                 <p>${post.createTime?string["EEE MMM d"]}</p>
                                             </div>
                                         </div>

@@ -35,8 +35,8 @@
                                         <div class="cat">
                                             <a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i>${tag.postCount!}</a>
                                         </div>
-                                        <a href="${context!}/tags/${tag.slugName!}"><h4>${tag.name}</h4></a>
-                                        <a class="blog_btn" href="${context!}/tags/${tag.slugName!}">看标签</a>
+                                        <a href="${context!}tags/${tag.slugName!}"><h4>${tag.name}</h4></a>
+                                        <a class="blog_btn" href="${context!}tags/${tag.slugName!}">看标签</a>
                                     </div>
                                 </div>
                             </article>
