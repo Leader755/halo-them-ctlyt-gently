@@ -25,7 +25,7 @@
                             <article class="blog_style1 small">
                                 <div class="blog_img">
                                 <#if>
-                                    <img class="img-fluid" src="${category.thumbnail}" alt="${tag.slugName}">
+                                    <img class="img-fluid" src="${category.thumbnail}" alt="${category.description}">
                                 <#else>
                                     <img class="img-fluid" src="${(settings.other_bg)!static+'/source/img/bg.png'}" alt="${category.description}">
                                 </#if>
