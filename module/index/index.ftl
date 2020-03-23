@@ -120,7 +120,7 @@
                     <div class="blog_right_sidebar">
                         <#if settings.sidebar_profile!true>
                             <aside class="single_sidebar_widget author_widget">
-                                <img class="author_img img-fluid" src="${user.avatar!}" alt="${uesr.nickname!}">
+                                <img class="author_img img-fluid" src="${user.avatar!}" alt="${user.nickname!}">
                                 <h4>${user.nickname!}</h4>
                                 <p>${user.description!}</p>
                                 <p>${options.seo_description!}</p>
