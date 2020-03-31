@@ -34,7 +34,7 @@
     
 
     <#if  settings.darkly_there==true>
-        ${.now?time("HH")}
+        ${.now?string("HH")}
         <link rel="stylesheet" type="text/css" href="${static!}/source/css/darkly-there.css" />
         
     </#if>
