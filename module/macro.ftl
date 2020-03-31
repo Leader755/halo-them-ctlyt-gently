@@ -30,6 +30,8 @@
 
     <link rel="stylesheet" href="${static!}/source/css/share.min.css">
     <link rel="stylesheet" href="${static!}/source/css/other.css">
+    <#--  暗黑样式  -->
+    <link rel="stylesheet" href="${static!}/source/css/darkly-there.css">
     <style>
         .home_banner_area{
             background: url(${(settings.banner_bg)!static+'/source/img/bg.png'}) no-repeat scroll center left;          
@@ -49,19 +51,6 @@
         </#if>
         .blog_box{
             height:100px;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #444;
-                color: #e4e4e4;
-            }
-            a {
-                color: #e39777;
-            }
-            img {
-                filter: grayscale(30%);
-            }
         }
 
 

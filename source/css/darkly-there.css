@@ -1,0 +1,42 @@
+body{
+	background: #000 !important;
+}
+/*********
+**********************************
+**********************************
+卡片样式
+**********************************
+**********************************
+*********/
+.blog_text{
+	background: #343a40 !important; 
+}
+/*
+卡片样式
+*/
+.blog_style1 .blog_text .blog_text_inner{
+	background: #495057 !important; 
+}
+/*
+按钮样式
+*/
+.blog_style1 .blog_text .blog_text_inner .cat .cat_btn{
+	border: 1px solid #6c757d !important;
+	background: #777 !important;
+}
+/*
+按钮样式
+*/
+.blog_btn{
+	border: 1px solid #212529 !important;
+	background: #6c757d !important;
+}
+/*
+文章内容
+*/
+.blog_style1 .blog_text .blog_text_inner p{
+	color: #dee2e6 !important;
+}
+.blog_style1 .blog_text .blog_text_inner h4{
+	color: #FFFFFF !important;
+}
