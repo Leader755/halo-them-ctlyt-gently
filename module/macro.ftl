@@ -36,7 +36,7 @@
         window.onload=function(){
             var date = new Date();
             if(date.getHours()=<7 || date.getHours()>=19){
-                var link = document.getElementsById("css");
+                var link = document.getElementById("css");
                 link.setAttribute("href","${static!}/source/css/darkly-there.css");  
             }
         }
