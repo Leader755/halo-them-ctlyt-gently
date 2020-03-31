@@ -30,8 +30,23 @@
 
     <link rel="stylesheet" href="${static!}/source/css/share.min.css">
     <link rel="stylesheet" href="${static!}/source/css/other.css">
-    <#--  暗黑样式  -->
-    <link rel="stylesheet" href="${static!}/source/css/darkly-there.css">
+    <#if  !(settings.darkly_there)?? || settings.darkly_there==false>
+        <#--  暗黑样式  -->
+        <script>
+            var date = new Date();
+            if(date.getHours()=<7 || date.getHours()>=19){
+                var link = document.createElement("link");
+                link.rel = "stylesheet";
+                link.type = "text/css";
+                link.href = "${static!}/source/css/darkly-there.css";
+                var head = document.getElementsByTagName("head")[0];
+                head.appendChild(link);
+            }
+        </script>
+    </#if>
+    
+
+    
     <style>
         .home_banner_area{
             background: url(${(settings.banner_bg)!static+'/source/img/bg.png'}) no-repeat scroll center left;          

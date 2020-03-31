@@ -100,6 +100,17 @@ sidebar:
           label: 开启
         - value: false
           label: 关闭
+    darkly_there:
+      name: darkly_there
+      label: 暗黑样式
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
     banner_bg:
       name: banner_bg
       label: 主页banner图
