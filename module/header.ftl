@@ -84,7 +84,7 @@
     </div>
     <div class="logo_part">
         <div class="container">
-            <a class="logo ctlyt-logo" href="${context!}"><img src="${options.blog_logo!}"  alt="${options.blog_title!}"> ${options.blog_title!}</a>
+            <a class="logo ctlyt-logo" href="${context!}"><#if (options.blog_logo)??> <img src="${options.blog_logo!}"  alt="${options.blog_title!}"></#if> ${options.blog_title!}</a>
         </div>
     </div>
 </header>
