@@ -42,7 +42,7 @@
                 head.appendChild(link);
             }
         </script>
-         <link rel="stylesheet" href="${static!}/source/css/darkly-there.css">
+
     </#if>
     
 
