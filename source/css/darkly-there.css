@@ -1,5 +1,36 @@
 body{
 	background: #000 !important;
+	color: #e9ecef !important;
+}
+/*********
+**********************************
+**********************************
+导航栏
+**********************************
+**********************************
+*********/
+.main_menu .navbar .nav .nav-item .nav-link{
+	color: #e9ecef !important;
+}
+.main_menu .navbar{
+	background: #000000 !important; 
+}
+.ctlyt-logo{
+	color: #e9ecef !important;
+}
+/*********
+**********************************
+**********************************
+banner
+**********************************
+**********************************
+*********/
+.banner_area {
+	background: #343a40 !important; 
+}
+.banner_area .banner_inner .banner_content {
+	background: #212529 !important;
+	color: #e9ecef !important;
 }
 /*********
 **********************************
