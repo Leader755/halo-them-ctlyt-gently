@@ -30,9 +30,9 @@
                                     <span><i class="fa fa-calendar" aria-hidden="true"></i> ${post.createTime?string["EEE MMM d"]}</span>
                                     <span><i class="fa fa-eye" aria-hidden="true"></i> ${post.visits!0}</span>
                                 </div>
-                                <a href="${context!}archives/${post.fullPath!}"><h4>${post.title!}</h4></a>
+                                <a href="${post.fullPath!}"><h4>${post.title!}</h4></a>
                                 <p class="ctlyt-p-text">${post.summary!}</p>
-                                <a class="blog_btn" href="${context!}archives/${post.fullPath!}">阅读更多</a>
+                                <a class="blog_btn" href="${post.fullPath!}">阅读更多</a>
                             </div>
                         </div>
                     </article>
