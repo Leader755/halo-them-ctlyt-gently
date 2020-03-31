@@ -121,7 +121,9 @@
     <script src="${static!}/source/js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
-<canvas id="matrix"></canvas>
+<#if  settings.min_girl>
+    <canvas id="matrix"></canvas>
+</#if>
 </#macro>
 <#macro footer>
     <#include "footer.ftl" />

@@ -1411,6 +1411,9 @@ button:focus {
 }
 
 @media (max-width: 767px) {
+  #matrix{
+    display: none;
+  }
   .single-post-area .navigation-area .nav-left {
     margin-bottom: 30px;
   }
@@ -1448,6 +1451,9 @@ button:focus {
 }
 
 @media (max-width: 991px) {
+  #matrix{
+    display: none;
+  }
   .single-post-area .sidebar-widgets {
     padding-bottom: 0px;
   }
@@ -1461,6 +1467,9 @@ button:focus {
 }
 
 @media (max-width: 414px) {
+  #matrix{
+    display: none;
+  }
   .comments-area {
     padding: 50px 8px;
   }
