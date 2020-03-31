@@ -18,6 +18,7 @@ body{
 .ctlyt-logo{
 	color: #e9ecef !important;
 }
+
 /*********
 **********************************
 **********************************
@@ -26,10 +27,14 @@ banner
 **********************************
 *********/
 .banner_area {
-	background: #343a40 !important; 
+	background-color: #343a40 !important; 
 }
 .banner_area .banner_inner .banner_content {
 	background: #212529 !important;
+	color: #e9ecef !important;
+}
+/* 标题  */
+.banner_area .banner_inner .banner_content h2{
 	color: #e9ecef !important;
 }
 /*********
