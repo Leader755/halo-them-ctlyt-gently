@@ -67,6 +67,13 @@ banner
 **********************************
 **********************************
 *********/
+.blog_text .cat a{
+	color: #EEEEEE !important;
+}
+.blog_text .cat a i{
+	color: #EEEEEE !important;
+	padding-right: 10px;
+}
 .blog_text{
 	background: #222222 !important; 
 }
