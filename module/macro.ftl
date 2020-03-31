@@ -31,7 +31,6 @@
     <link rel="stylesheet" href="${static!}/source/css/share.min.css">
     <link rel="stylesheet" href="${static!}/source/css/other.css">
     <#if  !(settings.darkly_there)?? || settings.darkly_there==false>
-        <#--  暗黑样式  -->
         <script>
             var date = new Date();
             if(date.getHours()=<7 || date.getHours()>=19){
