@@ -49,13 +49,15 @@
                                 </span>
                             </a>
                         </li>
-                        <#list rainbow as r>
-                            <#if r == posts.number+1>
-                                <li class="page-item active"><a href="${context!}search/page/${posts.number+1}?keyword=${keyword}" class="page-link">${posts.number+1}</a></li>
-                            <#else>
-                                <li class="page-item"><a href="${context!}search/page/${r}?keyword=${keyword}" class="page-link">${r}</a></li>
-                            </#if>
-                        </#list>
+                        <#if rainbow??>
+                            <#list rainbow as r>
+                                <#if r == posts.number+1>
+                                    <li class="page-item active"><a href="${context!}search/page/${posts.number+1}?keyword=${keyword}" class="page-link">${posts.number+1}</a></li>
+                                <#else>
+                                    <li class="page-item"><a href="${context!}search/page/${r}?keyword=${keyword}" class="page-link">${r}</a></li>
+                                </#if>
+                            </#list>
+                        </#if>
                         <li class="page-item <#if posts.getTotalPages() gt posts.number+1><#else > is-invisible is-hidden-mobile</#if>">
                             <a href="${context!}search/page/${posts.number+2}?keyword=${keyword}" class="page-link" aria-label="下一页">
                                 <span aria-hidden="true">
