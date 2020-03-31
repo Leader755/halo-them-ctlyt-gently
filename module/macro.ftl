@@ -51,6 +51,19 @@
             height:100px;
         }
 
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #444;
+                color: #e4e4e4;
+            }
+            a {
+                color: #e39777;
+            }
+            img {
+                filter: grayscale(30%);
+            }
+        }
+
 
     </style>
     <script src="${static!}/source/js/jquery-3.2.1.min.js"></script>
