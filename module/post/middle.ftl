@@ -14,7 +14,7 @@
                             <a href="${context!}categories/${category.slugName!}">${category.name!}</a>
                         </#list>
                        
-                        <a href="${${post.fullPath!}">${post.title!}</a>
+                        <a href="${post.fullPath!}">${post.title!}</a>
                     </div>
                 </div>
             </div>
