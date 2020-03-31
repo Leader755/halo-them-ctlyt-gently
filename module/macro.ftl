@@ -34,9 +34,10 @@
     
 
     <#if  settings.darkly_there==true>
-        ${.now?string("HH")}
-        <link rel="stylesheet" type="text/css" href="${static!}/source/css/darkly-there.css" />
+        <#if ${.now?string("HH")} < 8 || ${.now?string("HH")} > 20>
         
+        <link rel="stylesheet" type="text/css" href="${static!}/source/css/darkly-there.css" />
+        </#if>
     </#if>
     
 
