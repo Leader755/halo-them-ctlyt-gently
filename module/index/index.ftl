@@ -23,9 +23,9 @@
                                             <span><i class="fa fa-calendar" aria-hidden="true"></i> ${post.createTime?string["EEE MMM d"]}</span>
                                             <span><i class="fa fa-eye" aria-hidden="true"></i> ${post.visits!0}</span>
                                         </div>
-                                        <a href="${context!}archives/${post.url!}"><h4>${post.title!}</h4></a>
+                                        <a href="${context!}archives/${post..fullPath!}"><h4>${post.title!}</h4></a>
                                         <p class="ctlyt-p-text">${post.summary!}</p>
-                                        <a class="blog_btn" href="${context!}archives/${post.url!}">阅读更多</a>
+                                        <a class="blog_btn" href="${context!}archives/${post..fullPath!}">阅读更多</a>
                                     </div>
                                 </div>
                             </#if>
@@ -78,9 +78,9 @@
                                             <span><i class="fa fa-calendar" aria-hidden="true"></i> ${post.createTime?string["EEE MMM d"]}</span>
                                             <span><i class="fa fa-eye" aria-hidden="true"></i> ${post.visits!0}</span>
                                         </div>
-                                        <a href="${context!}archives/${post.url!}"><h4>${post.title!}</h4></a>
+                                        <a href="${context!}archives/${post..fullPath!}"><h4>${post.title!}</h4></a>
                                         <p class="ctlyt-p-text">${post.summary!}</p>
-                                        <a class="blog_btn" href="${context!}archives/${post.url!}">阅读更多</a>
+                                        <a class="blog_btn" href="${context!}archives/${post..fullPath!}">阅读更多</a>
                                     </div>
                                 </div>
                             </article>
@@ -162,7 +162,7 @@
                                             <div class="media post_item">
                                                 <img class="img-width" src="${post.thumbnail!}" alt="${post.title!}">
                                                 <div class="media-body">
-                                                    <a href="${context!}archives/${post.url!}"><h3>${post.title!}</h3></a>
+                                                    <a href="${context!}archives/${post..fullPath!}"><h3>${post.title!}</h3></a>
                                                     <p>${post.createTime?string["EEE MMM d"]}</p>
                                                 </div>
                                             </div>
@@ -231,9 +231,9 @@
                                             <span><i class="fa fa-calendar" aria-hidden="true"></i> ${post.createTime?string["EEE MMM d"]}</span>
                                             <span><i class="fa fa-eye" aria-hidden="true"></i> ${post.visits!0}</span>
                                         </div>
-                                        <a href="${context!}archives/${post.url!}"><h4>${post.title!}</h4></a>
+                                        <a href="${context!}archives/${post..fullPath!}"><h4>${post.title!}</h4></a>
                                         <p class="ctlyt-p-text">${post.summary!}</p>
-                                        <a class="blog_btn" href="${context!}archives/${post.url!}">阅读更多</a>
+                                        <a class="blog_btn" href="${context!}archives/${post..fullPath!}">阅读更多</a>
                                     </div>
                                 </div>
                             </article>

@@ -14,7 +14,7 @@
                             <a href="${context!}categories/${category.slugName!}">${category.name!}</a>
                         </#list>
                        
-                        <a href="${post.url!}">${post.title!}</a>
+                        <a href="${post..fullPath!}">${post.title!}</a>
                     </div>
                 </div>
             </div>
@@ -122,7 +122,7 @@
                                     <#if post_index lt 3>
                                         <div class="media post_item">
                                             <div class="media-body">
-                                                <a href="${context!}archives/${post.url!}"><h3>${post.title!}</h3></a>
+                                                <a href="${context!}archives/${post..fullPath!}"><h3>${post.title!}</h3></a>
                                                 <p>${post.createTime?string["EEE MMM d"]}</p>
                                             </div>
                                         </div>
@@ -140,7 +140,7 @@
                                     <#if post_index lt 3>
                                         <div class="media post_item">
                                             <div class="media-body">
-                                                <a href="${context!}archives/${post.url!}"><h3>${post.title!}</h3></a>
+                                                <a href="${context!}archives/${post..fullPath!}"><h3>${post.title!}</h3></a>
                                                 <p>${post.createTime?string["EEE MMM d"]}</p>
                                             </div>
                                         </div>
