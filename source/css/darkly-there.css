@@ -38,6 +38,15 @@ banner
 	filter: grayscale(100%);
 	filter: gray;
 }
+.home_banner_area{
+	background-color: #222222 !important; 
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+}
 .banner_area .banner_inner .banner_content {
 	background: #000000 !important;
 	color: #e9ecef !important;
