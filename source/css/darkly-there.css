@@ -27,14 +27,19 @@ banner
 **********************************
 *********/
 .banner_area {
-	background-color: #343a40 !important; 
+	background-color: #222222 !important; 
 }
 .banner_area .banner_inner .banner_content {
-	background: #212529 !important;
+	background: #000000 !important;
 	color: #e9ecef !important;
 }
+
 /* 标题  */
 .banner_area .banner_inner .banner_content h2{
+	color: #e9ecef !important;
+}
+/* 连接  */
+.banner_area .banner_inner .banner_content .page_link a{
 	color: #e9ecef !important;
 }
 /*********
@@ -45,7 +50,10 @@ banner
 **********************************
 *********/
 .blog_text{
-	background: #343a40 !important; 
+	background: #222222 !important; 
+}
+.blog_text h4{
+	color: #FFFFFF !important;
 }
 /*
 卡片样式
@@ -75,4 +83,59 @@ banner
 }
 .blog_style1 .blog_text .blog_text_inner h4{
 	color: #FFFFFF !important;
+}
+/*********
+**********************************
+**********************************
+右边样式
+**********************************
+**********************************
+*********/
+.blog_right_sidebar{
+	border: 1px solid #212529 !important;
+    background: #222222 !important;
+}
+.blog_right_sidebar .author_widget h4{
+	color: #EEEEEE !important;
+}
+.blog_right_sidebar .author_widget .social_icon a {
+	color: #EEEEEE !important;
+}
+/* 标题 */
+.blog_right_sidebar .widget_title{
+	color: #e9ecef !important;
+}
+/* 标题内容 */
+.blog_right_sidebar .popular_post_widget .post_item .media-body h3 {
+	color: #e9ecef !important;
+}
+.blog_right_sidebar .post_category_widget .cat-list li a{
+	color: #eeeeee !important;
+}
+.ctlyt-menu>a{
+	color: #eeeeee !important;
+}
+/*********
+**********************************
+**********************************
+文章内容
+**********************************
+**********************************
+*********/
+blockquote{
+	background-color: #222222 !important;
+}
+/*********
+**********************************
+**********************************
+评论
+**********************************
+**********************************
+*********/
+
+.comment-form {
+   	background-color: #222222 !important;
+}
+.halo-comment .comment-content {
+	color: #eeeeee !important;
 }
