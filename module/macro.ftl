@@ -30,16 +30,17 @@
 
     <link rel="stylesheet" href="${static!}/source/css/share.min.css">
     <link rel="stylesheet" href="${static!}/source/css/other.css">
+    <link rel="stylesheet" type="text/css" id="css"/>
     <#if  settings.darkly_there==true>
         <script type="text/javascript">
+        window.onload=function(){
             var date = new Date();
             if(date.getHours()=<7 || date.getHours()>=19){
-                var link = document.createElement("link");
-                link.rel = "stylesheet";
-                link.href = "${static!}/source/css/darkly-there.css";
-                var head = document.getElementsByTagName("head")[0];
-                head.appendChild(link);
+                var link = document.getElementsById("css");
+                link.setAttribute("href","${static!}/source/css/darkly-there.css");  
             }
+        }
+            
           
         </script>
 
