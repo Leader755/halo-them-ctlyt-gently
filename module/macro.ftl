@@ -34,7 +34,7 @@
     
 
     <#if  settings.darkly_there==true>
-        <#if .now?string("HH")?eval < 7 || .now?string("HH")?eval > 19>
+        <#if .now?string("HH")?eval lt 7 || .now?string("HH")?eval gt 19 >
         
         <link rel="stylesheet" type="text/css" href="${static!}/source/css/darkly-there.css" />
         </#if>
