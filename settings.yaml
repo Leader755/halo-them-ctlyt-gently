@@ -129,7 +129,6 @@ sidebar:
       type: text
       placeholder: '图片地址'
       default: null
-
 post:
   label: 文章设置
   items:
@@ -218,6 +217,20 @@ social:
       label: Telegram
       type: text
       placeholder: 'Telegram 用户名'
+plug:
+  label: 插件设置
+  items:
+    min_girl:
+      name: min_girl
+      label: 小女孩
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
 custom_links:
   label: 自定义链接
   items:

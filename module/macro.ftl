@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="${static!}/source/css/other.css">
 
     
-
+    <!--  暗黑样式  -->
     <#if  settings.darkly_there==true>
         <#if .now?string("HH")?eval lt 7 || .now?string("HH")?eval gt 19 >
         
@@ -59,15 +59,69 @@
                 position: absolute;
             }
         </#if>
+        /*  小女孩插件  */
+        <#if  settings.min_girl>
+            #matrix{
+                position: fixed; top:0; left: 0; z-index: -1; opacity:0.8;
+            }
+            canvas#live2dcanvas {
+                border: 0 !important;
+                left: 0;
+            }
+        </#if>
         .blog_box{
             height:100px;
         }
 
 
     </style>
+    <#if  settings.min_girl>
+        <script type="text/javascript">
+
+            //文字
+            var txts = "0123456789!@#$%^&*()~_+℃☆○※";
+            //转为数组
+            txts = txts.split("");
+            var matrix=document.getElementById("matrix");
+            var context=matrix.getContext("2d");
+            matrix.height=window.innerHeight;
+            matrix.width=window.innerWidth;
+            var drop=[];
+            var font_size=16;
+            var columns=matrix.width/font_size;
+            for(var i=0;i<columns;i++)
+                drop[i]=1;
+
+            function drawMatrix(){
+
+                context.fillStyle="rgba(0, 0, 0, 0.09)";
+                context.fillRect(0,0,matrix.width,matrix.height);
+
+
+                context.fillStyle="green";
+                context.font=font_size+"px";
+                for(var i=0;i<columns;i++){
+                    //随机取要输出的文字
+                    var text = txts[Math.floor(Math.random()*txts.length)];
+                    //输出文字，注意坐标的计算
+                    context.fillText(text,i*font_size,drop[i]*font_size);/*get 0 and 1*/
+
+                    if(drop[i]*font_size>(matrix.height*2/3)&&Math.random()>0.95)/*reset*/
+                        drop[i]=0;
+                    drop[i]++;
+                }
+            }
+            setInterval(drawMatrix,33);
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.0.4/lib/L2Dwidget.min.js"></script>
+        <script type="text/javascript">
+                L2Dwidget.init();
+        </script>
+    </#if>
     <script src="${static!}/source/js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
+<canvas id="matrix"></canvas>
 </#macro>
 <#macro footer>
     <#include "footer.ftl" />
