@@ -70,7 +70,8 @@ blockquote img,img{
 }
 /*  导航目录 */
 .ctlyt-menu{
-    
+    background-color: #FAFAFA;
+    padding: 50px;  
 }
 .ctlyt-menu li>a{
     color: #000;
