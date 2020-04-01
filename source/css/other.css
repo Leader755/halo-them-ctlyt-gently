@@ -72,6 +72,7 @@ blockquote img,img{
 .ctlyt-menu{
     background-color: #FAFAFA;
     padding: 50px;  
+    z-index: 2;
 }
 .ctlyt-menu li>a{
     color: #000;
