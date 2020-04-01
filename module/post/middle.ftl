@@ -11,7 +11,7 @@
                         <a href="${context!}">首页</a>
                         <a href="${context!}categories">所有分类</a>
                         <#list post.categories as category>
-                            <a href="${context!}categories/${category.slugName!}">${category.name!}</a>
+                            <a href="${context!}categories/${category.slug!}">${category.name!}</a>
                         </#list>
                        
                         <a href="${post.fullPath!}">${post.title!}</a>

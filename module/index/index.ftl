@@ -18,7 +18,7 @@
                                     <div class="blog_text">
                                         <div class="cat">
                                             <#list post.categories as category>
-                                                <a class="cat_btn" href="${context!}categories/${category.slugName!}">${category.name!}</a>
+                                                <a class="cat_btn" href="${context!}categories/${category.slug!}">${category.name!}</a>
                                             </#list>
                                             <span><i class="fa fa-calendar" aria-hidden="true"></i> ${post.createTime?string["EEE MMM d"]}</span>
                                             <span><i class="fa fa-eye" aria-hidden="true"></i> ${post.visits!0}</span>
@@ -181,7 +181,7 @@
                                             <#list categories as category>
                                                 <#if category.postCount gt 0 >
                                                     <li>
-                                                        <a href="${context!}categories/${category.slugName!}" class="d-flex justify-content-between">
+                                                        <a href="${context!}categories/${category.slug!}" class="d-flex justify-content-between">
                                                             <p>${category.name}</p>
                                                             <p>${category.postCount}</p>
                                                         </a>
