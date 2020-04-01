@@ -49,6 +49,9 @@
 @media (max-width:991px){
 	/* Main Menu Area css
 	============================================================================================ */
+	#matrix{
+		display: none;
+	}
 	.logo_part {
 		display: none;
 	}

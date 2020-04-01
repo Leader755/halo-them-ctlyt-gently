@@ -21,6 +21,15 @@ body{
 .ctlyt-logo{
 	color: #e9ecef !important;
 }
+.main_menu .navbar .nav .nav-item .nav-link{
+	color: #e9ecef !important;
+}
+.navbar-light .navbar-brand{
+	color: #e9ecef !important;
+}
+.navbar-toggler span {
+	background: #e9ecef !important;
+}
 
 /*********
 **********************************
