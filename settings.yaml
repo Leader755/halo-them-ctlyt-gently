@@ -220,6 +220,16 @@ social:
 plug:
   label: 插件设置
   items:
+    plug_click:
+      name: plug_click
+      label: 点击特效
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
     min_girl:
       name: min_girl
       label: 小女孩

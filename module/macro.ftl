@@ -118,6 +118,9 @@
                 L2Dwidget.init();
         </script>
     </#if>
+    <#if  settings.plug_click>
+        <script src="${static!}/source/js/click.min.js"></script>
+    </#if>
 
     <#if  settings.plug_muc?? && settings.plug_muc!='' >
         <link rel="stylesheet" href="${static!}/source/css/player.min.css">
