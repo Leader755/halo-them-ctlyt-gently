@@ -70,10 +70,7 @@ blockquote img,img{
 }
 /*  导航目录 */
 .ctlyt-menu{
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    justify-content: start;
+    
 }
 .ctlyt-menu li>a{
     color: #000;
