@@ -58,7 +58,7 @@
                     <#if  settings.plug_muc>
                     <meting-js
                         server="netease"
-                        type="song"
+                        type="playlist"
                         id="572720628"
                     </meting-js>
                     </#if>
