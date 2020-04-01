@@ -58,8 +58,8 @@
                     <#if  settings.plug_muc>
                     <meting-js
                         server="netease"
-                        type="song"
-                        id="572720628"
+                        type="playlist"
+                        id="699882445"
                     </meting-js>
                     </#if>
                     <ul class="nav navbar-nav navbar-right header_social ml-auto">
