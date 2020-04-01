@@ -55,11 +55,11 @@
                             </li>    
                         </#if>
                     </ul>
-                    <#if  settings.plug_muc>
+                    <#if  settings.plug_muc?? && settings.plug_muc!='' >
                     <meting-js
                         server="netease"
                         type="playlist"
-                        id="699882445"
+                        id="${settings.plug_muc!}"
                         list-folded="true"
                     </meting-js>
                     </#if>

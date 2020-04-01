@@ -234,14 +234,8 @@ plug:
     plug_muc:
       name: plug_muc
       label: 音乐插件
-      type: radio
-      data-type: bool
-      default: false
-      options:
-        - value: true
-          label: 开启
-        - value: false
-          label: 关闭
+      type: text
+      placeholder: '填写网易云音乐歌单ID'
 custom_links:
   label: 自定义链接
   items:

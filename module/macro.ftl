@@ -119,7 +119,7 @@
         </script>
     </#if>
 
-    <#if  settings.plug_muc>
+    <#if  settings.plug_muc?? && settings.plug_muc!='' >
         <link rel="stylesheet" href="${static!}/source/css/player.min.css">
         <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
         <!-- require MetingJS -->
