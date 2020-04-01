@@ -118,6 +118,15 @@
                 L2Dwidget.init();
         </script>
     </#if>
+
+
+    <link rel="stylesheet" href="${static!}/source/css/player.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <!-- require MetingJS -->
+    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+
+
     <script src="${static!}/source/js/jquery-3.2.1.min.js"></script>
 </head>
 <body>

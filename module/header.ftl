@@ -55,11 +55,11 @@
                             </li>    
                         </#if>
                     </ul>
-                    <iframe frameborder="0" border="1" 
-                                marginwidth="0" marginheight="0"
-                                width="100%" height="200" 
-                                src="//music.163.com/outchain/player?type=0&id=4870830656&auto=1&height=80">
-                    </iframe>
+                    <meting-js
+                        server="netease"
+                        type="song"
+                        id="572720628"
+                    </meting-js>
                     <ul class="nav navbar-nav navbar-right header_social ml-auto">
                         <#if settings.gently_github?? && settings.gently_github!=''>
                             <li class="nav-item"><a href="https://github.com/${settings.gently_github}" target="_blank"><i class="fa fa-github"></i></a></li>
