@@ -201,3 +201,9 @@ blockquote{
 .aplayer.aplayer-withlist .aplayer-list{
 	background-color: #222222 !important;
 }
+.aplayer.aplayer-withlist .aplayer-info {
+    border-bottom: none !important;
+}
+.aplayer .aplayer-list ol li :hover{
+	background-color: #888888 !important;
+}
