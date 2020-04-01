@@ -55,11 +55,13 @@
                             </li>    
                         </#if>
                     </ul>
+                    <#if  settings.plug_muc>
                     <meting-js
                         server="netease"
                         type="song"
                         id="572720628"
                     </meting-js>
+                    </#if>
                     <ul class="nav navbar-nav navbar-right header_social ml-auto">
                         <#if settings.gently_github?? && settings.gently_github!=''>
                             <li class="nav-item"><a href="https://github.com/${settings.gently_github}" target="_blank"><i class="fa fa-github"></i></a></li>
