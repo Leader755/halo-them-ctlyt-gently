@@ -25,9 +25,9 @@
                             <article class="blog_style1 small">
                                 <div class="blog_img">
                                     <#if (tag.thumbnail)?? && tag.thumbnail!=''>
-                                    <img class="img-fluid" src="${tag.thumbnail}" alt="${tag.slugName}">
+                                    <img class="img-fluid" src="${tag.thumbnail}" alt="${tag.name}">
                                     <#else>
-                                    <img class="img-fluid" src=" ${(settings.other_bg)!static+'/source/img/bg.png'}" alt="${tag.slugName}">
+                                    <img class="img-fluid" src=" ${(settings.other_bg)!static+'/source/img/bg.png'}" alt="${tag.name}">
                                     </#if>
                                 </div>
                                 <div class="blog_text">
