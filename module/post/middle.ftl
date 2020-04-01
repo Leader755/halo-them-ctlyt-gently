@@ -213,9 +213,11 @@
 
 
     $("#nav-box li a").click(function () {
-        $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top -20+ "px"}, 500);
+        $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top +20+ "px"}, 500);
         $("#nav-box li").each(function(){
             $this = $(this);
+            console.log($this[0]);
+            console.log(String(window.location));
             if($this[0].href==String(window.location)){
                 $("#nav-box li").removeClass("on");
                 $this.addClass("on");
