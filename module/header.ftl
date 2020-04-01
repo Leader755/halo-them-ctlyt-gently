@@ -60,6 +60,7 @@
                         server="netease"
                         type="playlist"
                         id="699882445"
+                        list-folded="true"
                     </meting-js>
                     </#if>
                     <ul class="nav navbar-nav navbar-right header_social ml-auto">
