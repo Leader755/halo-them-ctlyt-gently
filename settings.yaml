@@ -223,6 +223,7 @@ plug:
     plug_click:
       name: plug_click
       label: 点击特效
+      type: radio
       data-type: bool
       default: false
       options:
