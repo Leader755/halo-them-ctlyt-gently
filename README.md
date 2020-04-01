@@ -53,6 +53,9 @@ halo主题ctlyt-gently
 - [x] 主页无图模式
   - [ ] 开启
   - [x] 关闭
+- [x] 暗黑模式
+  - [ ] 开启
+  - [x] 关闭
 - [ ] 主页banner图
 - [ ] 其他页banner图
 - [ ] 其他页背景图
@@ -86,10 +89,16 @@ halo主题ctlyt-gently
 - [ ] Facebook  'Facebook 用户名'
 - [ ] Email  '邮箱地址'
 - [ ] Telegram  'Telegram 用户名'
+#### 插件设置
+
+- [ ] 小女孩
+- [ ] 网易云音乐
 
 #### 自定义连接
 
 - [ ] 底部链接
+
+
 
 ## 更新日志
 
@@ -126,7 +135,7 @@ halo主题ctlyt-gently
 
 ### 方法二
 
-1. 复制 https://github.com/cuntoulaoyangtou/halo-them-ctlyt-gently.git。
+1. 复制 https://github.com/cuntoulaoyangtou/halo-them-ctlyt-gently.git
 2. 进入后台 -> 外观 -> 主题。
 3. 点击右下方按钮选择安装主题，随后选择 `远程拉取`。
 4. 粘贴复制的链接到远程地址，点击下载即可。
