@@ -150,7 +150,9 @@
                             <div class="br"></div>
                         </aside>
                     </#if>
-                    <div class="ctlyt-menu"></div>
+                    <ul class="ctlyt-menu" id="nav-box">
+                    
+                    </ul>
                 </div>
             </div>
         </div>
@@ -180,7 +182,7 @@
                 var contentH=$(this).html();//获取内容
                 var markid="mark-"+tagName+"-"+index.toString();
                 $(this).attr("id",markid);//为当前h标签设置id
-                $(".ctlyt-menu").append("<a href='#"+markid+"'>"+contentH+"</a>");//在目标DIV中添加内容   
+                $(".ctlyt-menu").append("<li><a href='#"+markid+"'>"+contentH+"</a></li>");//在目标DIV中添加内容   
             }  
         });
 
@@ -207,5 +209,19 @@
             }
         }
     })
+
+
+
+    $("#nav-box li a").click(function () {
+        $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top -20+ "px"}, 500);
+        $("#nav-box li").each(function(){
+            $this = $(this);
+            if($this[0].href==String(window.location)){
+                $("#nav-box li").removeClass("on");
+                $this.addClass("on");
+            }
+        });
+        return false;//不要这句会有点卡顿
+    });
 
 </script>
