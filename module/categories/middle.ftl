@@ -37,7 +37,7 @@
                                         </div>
                                         <a href="${context!}categories/${category.slugName!}"><h4>${category.name!}</h4></a>
                                         <p class="ctlyt-p-text">${category.description}</p>
-                                        <a class="blog_btn" href="${context!}categories/${category.slugName!}">看分类</a>
+                                        <a class="blog_btn" href="${context!}categories/${category.slug!}">看分类</a>
                                     </div>
                                 </div>
                             </article>
