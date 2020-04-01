@@ -9,6 +9,9 @@ body{
 **********************************
 **********************************
 *********/
+.main_menu {
+	border-bottom: 1px solid #222222 !important;
+}
 .main_menu .navbar .nav .nav-item .nav-link{
 	color: #e9ecef !important;
 }
@@ -101,7 +104,7 @@ banner
 卡片样式
 */
 .blog_style1 .blog_text .blog_text_inner{
-	background: #495057 !important; 
+	background: #333333 !important; 
 }
 /*
 按钮样式
@@ -115,7 +118,7 @@ banner
 */
 .blog_btn{
 	border: 1px solid #212529 !important;
-	background: #6c757d !important;
+	background: #7c7c7c !important;
 }
 /*
 文章内容
