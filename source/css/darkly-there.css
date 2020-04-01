@@ -181,3 +181,17 @@ blockquote{
 .halo-comment .comment-content {
 	color: #eeeeee !important;
 }
+/*********
+**********************************
+**********************************
+音乐插件
+**********************************
+**********************************
+*********/
+.aplayer{
+	background-color: #222222 !important;
+}
+
+.aplayer.aplayer-withlist .aplayer-list{
+	background-color: #222222 !important;
+}
