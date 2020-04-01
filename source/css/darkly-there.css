@@ -187,6 +187,10 @@ banner
 blockquote{
 	background-color: #222222 !important;
 }
+
+.main_blog_details h4 {
+	color: #EEEEEE !important;
+}
 /*********
 **********************************
 **********************************

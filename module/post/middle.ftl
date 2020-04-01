@@ -150,7 +150,7 @@
                             <div class="br"></div>
                         </aside>
                     </#if>
-                    <div class="ctlyt-menu"></div>
+                    <ul class="ctlyt-menu"></ul>
                 </div>
             </div>
         </div>
@@ -180,7 +180,7 @@
                 var contentH=$(this).html();//获取内容
                 var markid="mark-"+tagName+"-"+index.toString();
                 $(this).attr("id",markid);//为当前h标签设置id
-                $(".ctlyt-menu").append("<a href='#"+markid+"'>"+contentH+"</a>");//在目标DIV中添加内容   
+                $(".ctlyt-menu").append("<li onclick='btn(#"+markid+")' class='menu-item' >"+contentH+"</li>");//在目标DIV中添加内容   
             }  
         });
 
@@ -208,12 +208,9 @@
         }
     })
 
-    $(function() {
-        var url = window.location.toString();
-        var id = url.split('#')[1];
-        if (id) {
-            $('html, body').animate({scrollTop: $('#' + id).offset().top}, 1000)
-        }
+    function btn (u){
+        document.getElementById(u);
+         $('html, body').animate({scrollTop: $(u).offset().top}, 1000)
     })
 
 </script>
