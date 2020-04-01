@@ -200,7 +200,7 @@
                                         <h4 class="widget_title">标签云</h4>
                                         <ul class="list">
                                             <#list tags as tag>
-                                                <li><a href="${context!}tags/${tag.slugName!}">${tag.name!}</a></li>
+                                                <li><a href="${tag.fullPath!}">${tag.name!}</a></li>
                                             </#list>
                                         </ul>
                                     </aside>

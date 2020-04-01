@@ -35,7 +35,7 @@
                     <div class="user_details">
                         <div class="float-left">
                             <#list tags as tag>
-                                <a href="${context!}tags/${tag.slugName!}">${tag.name!}</a>
+                                <a href="${tag.fullPath!}">${tag.name!}</a>
                             </#list>
                         </div>
                         <div class="float-right">
