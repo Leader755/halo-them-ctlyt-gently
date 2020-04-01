@@ -174,7 +174,10 @@ banner
 .blog_right_sidebar .post_category_widget .cat-list li a{
 	color: #eeeeee !important;
 }
-.ctlyt-menu>a{
+.main_menu{
+	direction: none;
+}
+.ctlyt-menu li >a{
 	color: #eeeeee !important;
 }
 /*********

@@ -75,7 +75,7 @@ blockquote img,img{
     flex-wrap: wrap;
     justify-content: start;
 }
-.ctlyt-menu>a{
+.ctlyt-menu li>a{
     color: #000;
     font-size:14px;
     font-weight: bold;
