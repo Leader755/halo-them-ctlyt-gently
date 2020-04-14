@@ -1,3 +1,4 @@
+<#include "../comment.ftl">
 <section class="banner_area">
     <div class="container">
         <div class="row banner_inner">
@@ -50,6 +51,14 @@
                     </#list>
                 </#if>
             </@linkTag>
+
+
+            <#if is_sheet??>
+                <div class="comment-form">
+                    <h4>评论</h4>
+                    <@comment sheet,"sheet" />
+                </div>
+            </#if>
       </div>
     </div>
 </section>
