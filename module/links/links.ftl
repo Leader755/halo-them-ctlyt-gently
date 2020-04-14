@@ -54,7 +54,7 @@
 
 
             <#if is_sheet??>
-                <div class="comment-form">
+                <div class="comment-form col-lg-12">
                     <h4>评论</h4>
                     <@comment sheet,"sheet" />
                 </div>
